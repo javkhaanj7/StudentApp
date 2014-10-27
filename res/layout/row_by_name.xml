@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TextView
+        android:id="@+id/numberList"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"        
+        android:paddingTop="15dp"
+        android:textColor="#514B4B"
+        android:paddingLeft="3dp"
+        android:textIsSelectable="false"
+        android:textSize="14sp" />
+    
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/numberList"
+        android:contentDescription="@string/flag_image" />
+ 
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/flag"
+        android:paddingBottom="10dp"
+        android:textIsSelectable="false"
+        android:textColor="#CC0033"
+        android:textSize="16sp" />
+ 
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/flag"
+        android:paddingLeft="10dp"
+        android:textIsSelectable="false"
+        android:textColor="#3399FF"
+        android:textSize="14sp" />
+    
+    <ImageView
+        android:id="@+id/studentImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/student_image"
+        android:layout_below="@+id/country"
+        android:layout_alignLeft="@+id/name"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+ 
+</RelativeLayout>

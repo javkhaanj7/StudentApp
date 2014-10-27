@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/studentImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/student_image"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/studentImage"
+        android:textIsSelectable="false"
+        android:textColor="#CC0033"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" />
+ 
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/studentImage"
+        android:paddingLeft="20dp"
+        android:textIsSelectable="false"
+        android:textColor="#3399FF"
+        android:textSize="14sp" />
+    
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country"
+        android:layout_toRightOf="@+id/studentImage"
+        android:paddingLeft="20dp"
+        android:contentDescription="@string/flag_image" />
+    
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/play"
+        android:src="@drawable/sound_on_icon"
+        android:contentDescription="@string/play_button"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+    
+    <TextView
+        android:id="@+id/textBiography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentImage"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:textIsSelectable="false"
+		android:scrollbars="vertical"
+        android:textColor="#514B4B" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textBiography"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
